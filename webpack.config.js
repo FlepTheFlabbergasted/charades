@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -8,6 +9,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.min.js',
   },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'public/index.html' }],
+    }),
+  ],
   module: {
     rules: [
       {
