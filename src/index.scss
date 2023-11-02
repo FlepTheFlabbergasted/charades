@@ -103,11 +103,15 @@ main {
 
 #prompt {
   text-align: center;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
 
 #button {
   cursor: pointer;
-  padding: 0.2em 0.8em;
+  padding: 0.3em 0.9em;
   border: none;
   border-radius: 999px;
 
