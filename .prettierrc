@@ -1,7 +1,8 @@
 {
+  "singleQuote": true,
   "trailingComma": "es5",
+  "printWidth": 120,
   "tabWidth": 2,
   "semi": true,
-  "singleQuote": true,
-  "prettier.printWidth": 120
+  "attributeGroups": ["^\\*", "^id$", "^class$", "$CODE_GUIDE", "$DEFAULT"]
 }
