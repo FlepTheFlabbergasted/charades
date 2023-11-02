@@ -9,23 +9,23 @@ $breakpoint-xl: 1920px; // (min-width: 1920px)
 
 @mixin breakpoint($point) {
   @if $point == xs {
-    @media screen and (max-width: $breakpoint-xs) {
+    @media only screen and (max-width: $breakpoint-xs) {
       @content;
     }
   } @else if $point == sm {
-    @media screen and (min-width: $breakpoint-sm) {
+    @media only screen and (min-width: $breakpoint-sm) {
       @content;
     }
   } @else if $point == md {
-    @media screen and (min-width: $breakpoint-md) {
+    @media only screen and (min-width: $breakpoint-md) {
       @content;
     }
   } @else if $point == lg {
-    @media screen and (min-width: $breakpoint-lg) {
+    @media only screen and (min-width: $breakpoint-lg) {
       @content;
     }
   } @else if $point == xl {
-    @media screen and (min-width: $breakpoint-xl) {
+    @media only screen and (min-width: $breakpoint-xl) {
       @content;
     }
   }
